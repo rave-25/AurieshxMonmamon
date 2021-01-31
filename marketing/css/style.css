@@ -1,15 +1,21 @@
-html, body{
-    margin: 0%;
+@import url('https://fonts.googleapis.com/css2family=Ubuntu:ital@1&display=swap');
+
+
+*{
+    margin: 0;
+    padding:0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    font-family: 'Ubuntu', sans-serif;
 }
 :root {
     /*---------------Theme Colors--------------*/
-    --text-gray: #3f4954;
-    --text-light: #686666da;
+    --text-gray: #5C5F58;
+    --text-light: #DCE1E3;
     --bg-color: #0f0f0f;
     --white: #ffffff;
-    --midnight: #104f55;
+    --midnight: #591C0B;
+    --blue-minded: #004E7C;
+    --highlight:#B73225;
 
     /*gradient color*/
     --sky: linear-gradient(120deg,#a1c4fd 0%, #c2e9fb 100%);
@@ -177,31 +183,53 @@ main .site-title .btn:hover{
 
 /* ACCORDION */
 
+
 .accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: var(--blue-minded);
+    color: var(--white);
     cursor: pointer;
     padding: 18px;
-    width: 100%;
-    text-align: left;
+    font-size:large;
+    height:75px;
+    width: 98%;
     border: none;
     outline: none;
-    transition: 0.4s;
+    margin:10px;
+    transition: 1.4s;
+    text-align:center;
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .accordion:hover {
+  /* .active, .accordion:hover {
     background-color: #ccc;
   }
-  
+   */
   /* Style the accordion panel. Note: hidden by default */
   .panel {
+    width:100%;
     padding: 0 18px;
-    background-color: white;
+    color:var(--bg-color);
     display: none;
+    padding:10px;
     overflow: hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
   }
 
+  .panel p{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight:bold;
+  }
+  /* ABOUT US ACCORDION */
+
+
+
+
+
+
+
+  
 /*--------X------Banner Area---------X------*/
 
 
