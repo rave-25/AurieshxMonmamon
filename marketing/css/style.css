@@ -39,8 +39,9 @@ ul {
 }
 
 h1 {
+    height: 10vh;
     font-family: 'Lexend Deca', cursive;
-    font-size: 2.5rem;
+    font-size: 1.6rem;
 }
 
 h2 {
@@ -59,8 +60,9 @@ button.btn {
     font-family: 'Livvic', sans-serif;
     cursor: pointer;
 }
-
-
+.services-grid {
+    font-family: Arial, Helvetica, sans-serif;
+ }
 /*------------------X------------Global Classes--------------X------------*/
 
 /*---------------Navbar-------------------------*/
@@ -177,9 +179,16 @@ main .site-title .btn:hover{
     border: 1px solid var(--midnight);
     color: var(--midnight);
 }
+main .about-header .about-area{
+    padding: 1rem 2rem;
+    color:var(--midnight);
+    text-align: center;
+}
 
-
-
+main .about-area h1 {
+    margin: 1rem;
+}
+main 
 
 /* ACCORDION */
 
@@ -223,11 +232,31 @@ main .site-title .btn:hover{
   }
   /* ABOUT US ACCORDION */
 
+  /*                Services            */
 
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+/* Remove extra left and right margins, due to padding in columns */
 
+.row {margin: 0 -5px;}
 
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
 
   
 /*--------X------Banner Area---------X------*/
@@ -243,6 +272,11 @@ main .site-title .btn:hover{
     .nav .toggle-collapse {
         display: initial;
     }
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
 }
 
 
