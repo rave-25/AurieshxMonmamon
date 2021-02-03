@@ -40,7 +40,7 @@ ul {
 
 h1 {
     height: 10vh;
-    font-family: 'Lexend Deca', cursive;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 1.6rem;
 }
 
@@ -227,21 +227,51 @@ main
   }
 
   .panel p{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu', sans-serif; /*ito copy mo*/
     font-weight:bold;
-  }
-  /* ABOUT US ACCORDION */
+}  
 
-  /*                Services            */
+
+.services-header{
+    margin-bottom: 120px;
+    width: 70%;
+    text-align: center;
+}
+
+.services-header h1{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+  .service-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services-grid {
+    justify-content: space-between;
+    text-align: center;
+    align-items:center;
+}
+
 
   .column {
-    float: left;
     width: 25%;
-    padding: 0 10px;
+    padding-right: 100px;
+    height:20vh;
+    list-style-type: none;
   }
 /* Remove extra left and right margins, due to padding in columns */
 
-.row {margin: 0 -5px;}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -255,8 +285,16 @@ main
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
-  background-color: #f1f1f1;
+  width: 300px; 
+  height: 300px;
+  text-transform:uppercase;
 }
+
+.card h1{
+    text-transform:uppercase;
+    color:var(--bg-color);  
+}
+
 
   
 /*--------X------Banner Area---------X------*/
@@ -265,6 +303,8 @@ main
 /*                Viewport less than or equal to 750px                  */
 
 @media only screen and (max-width: 750px) {
+
+    
     .nav .nav-menu, .nav-items {
         flex-direction: column;
     }
@@ -272,6 +312,7 @@ main
     .nav .toggle-collapse {
         display: initial;
     }
+
     .column {
         width: 100%;
         display: block;
