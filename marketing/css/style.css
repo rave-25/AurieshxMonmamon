@@ -54,16 +54,8 @@ h3 {
     font-size: 1.3rem;
 }
 
-button.btn {
-    border: none;
-    border-radius: 2rem;
-    padding: 1rem 3rem;
-    font-family: 'Livvic', sans-serif;
-    cursor: pointer;
-}
-.services-grid {
-    font-family: Arial, Helvetica, sans-serif;
- }
+
+
 /*------------------X------------Global Classes--------------X------------*/
 
 /*---------------Navbar-------------------------*/
@@ -121,13 +113,10 @@ button.btn {
     text-decoration:none;
     color:var(--midnight);
 }
-.nav .nav-items .nav-link:hover {
-    background-color: var(--midnight);
-    color:var(--white);
-}
+
 
 .nav .nav-items .nav-link:hover a{
-    color:var(--white);
+    border-bottom:3px solid var(--midnight);
 }
 .nav .nav-brand a{
     font-size: 1.6rem;
@@ -170,15 +159,26 @@ main .site-title h1, h3 {
     margin: 1rem;
 }
 
-main .site-title .btn {
+/* main .site-title{
     margin: 1.8rem;
     background: var(--sky);
+} */
+button.btn {
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    background-color:var(--blue-minded);
+    color:white;
+    text-transform:uppercase;
+    font-size:18px;
+
+    transition:font-size 0.5s ease-in-out;
 }
 
-main .site-title .btn:hover{
-    background: transparent;
-    border: 1px solid var(--midnight);
-    color: var(--midnight);
+.btn:hover{
+   font-size:20px;
+   font-weight:500;
 }
 main .about-header .about-area{
     padding: 1rem 2rem;
